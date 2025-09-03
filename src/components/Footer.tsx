@@ -34,6 +34,10 @@ const Footer = ({ isVisible }: FooterProps) => {
       animate={{ y: isVisible ? 0 : "100%" }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
       className="fixed bottom-0 left-0 right-0 bg-luxury-black border-t border-luxury-white-10 z-40"
+      style={{ 
+        transform: isVisible ? 'translateY(0)' : 'translateY(100%)',
+        transition: 'transform 0.6s ease-in-out'
+      }}
     >
       <div className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
