@@ -16,16 +16,16 @@ const HeroSection = () => {
       {/* Dark overlay for better text contrast */}
       <div className="absolute inset-0 bg-black/40 z-10" />
       
-      {/* Hero Content - centered in viewport */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-screen text-center px-4 md:px-8">
+      {/* Hero Content - centered in viewport with better mobile spacing */}
+      <div className="relative z-20 flex flex-col items-center justify-center h-screen text-center px-4 sm:px-6 md:px-8">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-16 md:mb-20"
+          className="mb-8 sm:mb-12 md:mb-16 lg:mb-20"
         >
-          <h1 className="typography-caption text-luxury-spacing-wide mb-4">
+          <h1 className="typography-caption text-luxury-spacing-wide mb-4 text-sm sm:text-base">
             LIGAIRE
           </h1>
         </motion.div>
@@ -35,9 +35,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="max-w-5xl mx-auto mb-8"
+          className="max-w-5xl mx-auto mb-6 sm:mb-8"
         >
-          <h2 className="typography-display-large text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light leading-tight text-center text-luxury-white">
             STEP INTO AN EXCLUSIVE REALM WHERE DISTINCTION KNOWS NO BOUNDS.
           </h2>
         </motion.div>
@@ -47,9 +47,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="max-w-3xl mx-auto mb-12"
+          className="max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12"
         >
-          <p className="typography-body text-lg md:text-xl text-luxury-white-70">
+          <p className="text-base sm:text-lg md:text-xl text-luxury-white-70 leading-relaxed">
             AI-powered lifestyle and luxury services powered by Connected VIP.
           </p>
         </motion.div>
@@ -59,9 +59,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="mb-16"
+          className="mb-8 sm:mb-12 md:mb-16"
         >
-          <button className="btn-luxury">
+          <button className="btn-luxury text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4">
             LAUNCHING SOON
           </button>
         </motion.div>
@@ -73,7 +73,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
           className="max-w-4xl mx-auto"
         >
-          <p className="typography-caption text-luxury-white-50">
+          <p className="text-xs sm:text-sm text-luxury-white-50 leading-relaxed">
             [ Monaco - London - Dubai - El Gouna - North Coast - Cairo ]
           </p>
         </motion.div>

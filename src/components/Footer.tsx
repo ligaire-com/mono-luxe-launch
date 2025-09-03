@@ -35,8 +35,8 @@ const Footer = ({ isVisible }: FooterProps) => {
       transition={{ duration: 0.6, ease: "easeInOut" }}
       className="bg-luxury-black border-t border-luxury-white-10"
     >
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
           
           {/* Left Section - Links & Languages */}
           <div className="space-y-8">
@@ -80,25 +80,25 @@ const Footer = ({ isVisible }: FooterProps) => {
               Enter a world reserved for you:
             </h3>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-luxury-minimal border border-luxury-white-30 hover:border-luxury-white">
+            <div className="flex flex-col gap-3 justify-center">
+              <button className="btn-luxury-minimal border border-luxury-white-30 hover:border-luxury-white text-sm py-2 px-4">
                 <span className="typography-caption">App Store</span>
               </button>
-              <button className="btn-luxury-minimal border border-luxury-white-30 hover:border-luxury-white">
+              <button className="btn-luxury-minimal border border-luxury-white-30 hover:border-luxury-white text-sm py-2 px-4">
                 <span className="typography-caption">Google Play</span>
               </button>
             </div>
           </div>
           
           {/* Right Section - Social & Copyright */}
-          <div className="space-y-8 lg:text-right">
+          <div className="space-y-6 sm:space-y-8 text-center md:text-left lg:text-right">
             {/* Social Media */}
             <div>
               <h3 className="typography-caption text-luxury-white mb-6">
                 Discover:
               </h3>
               
-              <div className="flex gap-6 lg:justify-end">
+              <div className="flex gap-6 justify-center md:justify-start lg:justify-end">
                 <a
                   href="#"
                   className="text-luxury-white hover:text-luxury-white-70 transition-colors duration-300"
