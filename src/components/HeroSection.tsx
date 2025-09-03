@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import luxuryLifestyleBg from '@/assets/luxury-lifestyle-bg2.jpg';
+import luxuryLifestyleBg from '@/assets/luxury-lifestyle-bg3.jpg';
 
 const HeroSection = () => {
   return (
