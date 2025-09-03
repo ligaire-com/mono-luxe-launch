@@ -4,8 +4,9 @@ import heroBackground from '@/assets/hero-background.jpg';
 const HeroSection = () => {
   return (
     <section 
-      className="relative min-h-screen w-full overflow-hidden bg-luxury-black"
+      className="relative w-full overflow-hidden bg-luxury-black"
       style={{
+        height: 'calc(100vh + 200px)', // Slightly taller than viewport to enable scroll
         backgroundImage: `url(${heroBackground})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -15,8 +16,8 @@ const HeroSection = () => {
       {/* Dark overlay for better text contrast */}
       <div className="absolute inset-0 bg-black/40 z-10" />
       
-      {/* Hero Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center min-h-screen text-center px-4 md:px-8 py-20">
+      {/* Hero Content - centered in viewport */}
+      <div className="relative z-20 flex flex-col items-center justify-center h-screen text-center px-4 md:px-8">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

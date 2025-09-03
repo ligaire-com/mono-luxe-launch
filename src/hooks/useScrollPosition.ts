@@ -7,7 +7,6 @@ export const useScrollPosition = () => {
     const updateScrollY = () => {
       const newScrollY = window.scrollY;
       setScrollY(newScrollY);
-      console.log('Scroll Y:', newScrollY); // Debug log
     };
     
     window.addEventListener('scroll', updateScrollY, { passive: true });
@@ -18,11 +17,8 @@ export const useScrollPosition = () => {
   return scrollY;
 };
 
-export const useFooterVisibility = (threshold = 100) => {
+export const useFooterVisibility = (threshold = 50) => {
   const scrollY = useScrollPosition();
-  const isVisible = scrollY > threshold;
   
-  console.log('ScrollY:', scrollY, 'Threshold:', threshold, 'Visible:', isVisible); // Debug log
-  
-  return isVisible;
+  return scrollY > threshold;
 };
