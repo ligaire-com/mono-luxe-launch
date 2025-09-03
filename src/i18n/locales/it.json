@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "LIGAIRE",
+    "headline1": "ENTRA IN UN",
+    "headline2": "REGNO ESCLUSIVO",
+    "headline3": "DOVE LA DISTINZIONE",
+    "headline4": "NON CONOSCE CONFINI.",
+    "subheadline": "Servizi di lifestyle e lusso {{aiPowered}} alimentati da {{connectedVip}}.",
+    "aiPowered": "potenziati dall'IA",
+    "connectedVip": "Connected VIP",
+    "cta": "INIZIA IL TUO VIAGGIO",
+    "description": "Vivi un mondo curato di lusso dove ogni dettaglio è personalizzato secondo i tuoi desideri. Dagli eventi esclusivi ai servizi personalizzati, scopri cosa significa vivere senza limiti."
+  },
+  "footer": {
+    "legal": {
+      "terms": "Termini",
+      "privacy": "Privacy",
+      "privacyChoices": "Le Tue Scelte sulla Privacy"
+    },
+    "languages": {
+      "english-us": "English (US)",
+      "english-uk": "English (UK)",
+      "italian": "Italiano",
+      "german": "Deutsch",
+      "french-fr": "Français (FR)",
+      "spanish-es": "Español (ES)"
+    },
+    "appDownload": {
+      "title": "Entra in un mondo riservato a te:",
+      "appStore": "App Store",
+      "googlePlay": "Google Play"
+    },
+    "social": {
+      "title": "Scopri:",
+      "instagram": "Instagram",
+      "twitter": "X (Twitter)",
+      "facebook": "Facebook"
+    },
+    "copyright": "©2025 Ligaire. Tutti i Diritti Riservati."
+  }
+}

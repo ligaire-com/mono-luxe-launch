@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "LIGAIRE",
+    "headline1": "STEP INTO AN",
+    "headline2": "EXCLUSIVE REALM",
+    "headline3": "WHERE DISTINCTION",
+    "headline4": "KNOWS NO BOUNDS.",
+    "subheadline": "{{aiPowered}} lifestyle and luxury services powered by {{connectedVip}}.",
+    "aiPowered": "AI-powered",
+    "connectedVip": "Connected VIP",
+    "cta": "BEGIN YOUR JOURNEY",
+    "description": "Experience a curated world of luxury where every detail is tailored to your desires. From exclusive events to personalized services, discover what it means to live without limits."
+  },
+  "footer": {
+    "legal": {
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "privacyChoices": "Your Privacy Choices"
+    },
+    "languages": {
+      "english-us": "English (US)",
+      "english-uk": "English (UK)",
+      "italian": "Italiano",
+      "german": "Deutsch",
+      "french-fr": "Français (FR)",
+      "spanish-es": "Español (ES)"
+    },
+    "appDownload": {
+      "title": "Enter a world reserved for you:",
+      "appStore": "App Store",
+      "googlePlay": "Google Play"
+    },
+    "social": {
+      "title": "Discover:",
+      "instagram": "Instagram",
+      "twitter": "X (Twitter)",
+      "facebook": "Facebook"
+    },
+    "copyright": "©2025 Ligaire. All Rights Reserved."
+  }
+}

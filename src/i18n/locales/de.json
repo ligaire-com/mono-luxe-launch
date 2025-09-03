@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "LIGAIRE",
+    "headline1": "BETRETEN SIE EINE",
+    "headline2": "EXKLUSIVE WELT",
+    "headline3": "WO UNTERSCHEIDUNG",
+    "headline4": "KEINE GRENZEN KENNT.",
+    "subheadline": "{{aiPowered}} Lifestyle- und Luxus-Services powered by {{connectedVip}}.",
+    "aiPowered": "KI-gesteuerte",
+    "connectedVip": "Connected VIP",
+    "cta": "BEGINNEN SIE IHRE REISE",
+    "description": "Erleben Sie eine kuratierte Welt des Luxus, wo jedes Detail auf Ihre Wünsche zugeschnitten ist. Von exklusiven Veranstaltungen bis hin zu personalisierten Services, entdecken Sie, was es bedeutet, ohne Grenzen zu leben."
+  },
+  "footer": {
+    "legal": {
+      "terms": "Bedingungen",
+      "privacy": "Datenschutz",
+      "privacyChoices": "Ihre Datenschutz-Optionen"
+    },
+    "languages": {
+      "english-us": "English (US)",
+      "english-uk": "English (UK)",
+      "italian": "Italiano",
+      "german": "Deutsch",
+      "french-fr": "Français (FR)",
+      "spanish-es": "Español (ES)"
+    },
+    "appDownload": {
+      "title": "Betreten Sie eine Welt, die Ihnen vorbehalten ist:",
+      "appStore": "App Store",
+      "googlePlay": "Google Play"
+    },
+    "social": {
+      "title": "Entdecken:",
+      "instagram": "Instagram",
+      "twitter": "X (Twitter)",
+      "facebook": "Facebook"
+    },
+    "copyright": "©2025 Ligaire. Alle Rechte vorbehalten."
+  }
+}
