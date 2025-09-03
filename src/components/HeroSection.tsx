@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import luxuryLifestyleBg from '@/assets/luxury-lifestyle-bg.jpg';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section 
       className="relative w-full overflow-hidden bg-luxury-black"
@@ -26,7 +29,7 @@ const HeroSection = () => {
           className="mb-8 sm:mb-12 md:mb-16 lg:mb-20"
         >
           <h1 className="typography-caption text-luxury-spacing-wide mb-4 text-sm sm:text-base">
-            LIGAIRE
+            {t('brand_name')}
           </h1>
         </motion.div>
         
@@ -39,16 +42,16 @@ const HeroSection = () => {
         >
           <h2 className="font-playfair font-normal leading-[0.95] text-luxury-white text-center">
             <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-2 sm:mb-4">
-              STEP INTO AN
+              {t('hero_title_1')}
             </span>
             <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-2 sm:mb-4 tracking-wider">
-              EXCLUSIVE REALM
+              {t('hero_title_2')}
             </span>
             <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest opacity-90">
-              WHERE DISTINCTION
+              {t('hero_title_3')}
             </span>
             <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest opacity-90">
-              KNOWS NO BOUNDS.
+              {t('hero_title_4')}
             </span>
           </h2>
         </motion.div>
@@ -69,10 +72,10 @@ const HeroSection = () => {
           className="max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12"
         >
           <p className="font-inter font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-luxury-white-70 leading-relaxed text-center tracking-wide">
-            <span className="italic font-normal">AI-powered</span> lifestyle and luxury services
+            <span className="italic font-normal">{t('hero_subtitle_ai')}</span> {t('hero_subtitle_text')}
             <br className="hidden sm:block" />
-            <span className="block sm:inline"> powered by </span>
-            <span className="font-medium text-luxury-white">Connected VIP</span>.
+            <span className="block sm:inline"> </span>
+            <span className="font-medium text-luxury-white">{t('hero_subtitle_brand')}</span>.
           </p>
         </motion.div>
         
@@ -84,7 +87,7 @@ const HeroSection = () => {
           className="mb-8 sm:mb-12 md:mb-16"
         >
           <button className="btn-luxury text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4">
-            LAUNCHING SOON
+            {t('hero_cta')}
           </button>
         </motion.div>
         
@@ -96,7 +99,7 @@ const HeroSection = () => {
           className="max-w-4xl mx-auto"
         >
           <p className="text-xs sm:text-sm text-luxury-white-50 leading-relaxed">
-            [ Monaco - London - Dubai - El Gouna - North Coast - Cairo ]
+            {t('hero_cities')}
           </p>
         </motion.div>
       </div>
