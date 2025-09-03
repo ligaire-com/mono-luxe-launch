@@ -14,7 +14,10 @@ export const useScrollPosition = () => {
   return scrollY;
 };
 
-export const useFooterVisibility = (threshold = 100) => {
+export const useFooterVisibility = (threshold = 50) => {
   const scrollY = useScrollPosition();
-  return scrollY > threshold;
+  const windowHeight = typeof window !== 'undefined' ? window.innerHeight : 0;
+  
+  // Show footer when scrolled past 80% of viewport height
+  return scrollY > windowHeight * 0.8;
 };
