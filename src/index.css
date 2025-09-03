@@ -6,12 +6,13 @@
 
 @layer base {
   :root {
-    /* Brand Color Palette */
+    /* Brand Color Palette - Corrected HSL values */
     --brand-black: 240 3% 11%;        /* #1B1B1C */
-    --brand-ink: 210 4% 89%;          /* #E2E3E4 */
+    --brand-ink: 210 4% 89%;          /* #E2E3E4 */  
     --brand-stone: 0 1% 54%;          /* #8A8989 */
     
     /* Subtle Tints */
+    --brand-ink-90: 210 4% 89% / 0.9;
     --brand-ink-70: 210 4% 89% / 0.7;
     --brand-ink-50: 210 4% 89% / 0.5;
     --brand-ink-30: 210 4% 89% / 0.3;

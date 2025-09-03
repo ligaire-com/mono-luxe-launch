@@ -17,7 +17,7 @@ const HeroSection = () => {
       }}
     >
       {/* Dark overlay for better text contrast */}
-      <div className="absolute inset-0 bg-black/40 z-10" />
+      <div className="absolute inset-0 bg-black/60 z-10" />
       
       {/* Hero Content - centered in viewport with better mobile spacing */}
       <div className="relative z-20 flex flex-col items-center justify-center h-screen text-center px-4 sm:px-6 md:px-8">
@@ -71,7 +71,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12"
         >
-          <p className="font-inter font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-brand-ink-70 leading-relaxed text-center tracking-wide">
+          <p className="font-inter font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-brand-ink-90 leading-relaxed text-center tracking-wide">
             <span className="italic font-normal">{t('hero_subtitle_ai')}</span> {t('hero_subtitle_text')}
             <br className="hidden sm:block" />
             <span className="block sm:inline"> </span>
@@ -98,7 +98,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
           className="max-w-4xl mx-auto"
         >
-          <p className="text-xs sm:text-sm text-brand-stone leading-relaxed">
+          <p className="text-xs sm:text-sm text-brand-ink-70 leading-relaxed">
             {t('hero_cities')}
           </p>
         </motion.div>

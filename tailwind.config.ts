@@ -66,6 +66,7 @@ export default {
 				black: 'hsl(var(--brand-black))',
 				ink: 'hsl(var(--brand-ink))',
 				stone: 'hsl(var(--brand-stone))',
+				'ink-90': 'hsl(var(--brand-ink-90))',
 				'ink-70': 'hsl(var(--brand-ink-70))',
 				'ink-50': 'hsl(var(--brand-ink-50))',
 				'ink-30': 'hsl(var(--brand-ink-30))',
