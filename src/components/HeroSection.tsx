@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion';
 import luxuryLifestyleBg from '@/assets/luxury-lifestyle-bg.jpg';
-import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
-  const { t } = useTranslation();
   return (
     <section 
       className="relative w-full overflow-hidden bg-luxury-black"
@@ -28,7 +26,7 @@ const HeroSection = () => {
           className="mb-8 sm:mb-12 md:mb-16 lg:mb-20"
         >
           <h1 className="typography-caption text-luxury-spacing-wide mb-4 text-sm sm:text-base">
-            {t('hero.title')}
+            LIGAIRE
           </h1>
         </motion.div>
         
@@ -41,16 +39,16 @@ const HeroSection = () => {
         >
           <h2 className="font-playfair font-normal leading-[0.95] text-luxury-white text-center">
             <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-2 sm:mb-4">
-              {t('hero.headline1')}
+              STEP INTO AN
             </span>
             <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-2 sm:mb-4 tracking-wider">
-              {t('hero.headline2')}
+              EXCLUSIVE REALM
             </span>
             <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest opacity-90">
-              {t('hero.headline3')}
+              WHERE DISTINCTION
             </span>
             <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest opacity-90">
-              {t('hero.headline4')}
+              KNOWS NO BOUNDS.
             </span>
           </h2>
         </motion.div>
@@ -71,10 +69,10 @@ const HeroSection = () => {
           className="max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12"
         >
           <p className="font-inter font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-luxury-white-70 leading-relaxed text-center tracking-wide">
-            <span className="italic font-normal">{t('hero.aiPowered')}</span> {t('hero.subheadline').replace(/{{aiPowered}}|{{connectedVip}}/g, '').replace('lifestyle and luxury services powered by .', 'lifestyle and luxury services')}
+            <span className="italic font-normal">AI-powered</span> lifestyle and luxury services
             <br className="hidden sm:block" />
             <span className="block sm:inline"> powered by </span>
-            <span className="font-medium text-luxury-white">{t('hero.connectedVip')}</span>.
+            <span className="font-medium text-luxury-white">Connected VIP</span>.
           </p>
         </motion.div>
         
@@ -86,7 +84,7 @@ const HeroSection = () => {
           className="mb-8 sm:mb-12 md:mb-16"
         >
           <button className="btn-luxury text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4">
-            {t('hero.cta')}
+            LAUNCHING SOON
           </button>
         </motion.div>
         
@@ -98,7 +96,7 @@ const HeroSection = () => {
           className="max-w-4xl mx-auto"
         >
           <p className="text-xs sm:text-sm text-luxury-white-50 leading-relaxed">
-            {t('hero.description')}
+            [ Monaco - London - Dubai - El Gouna - North Coast - Cairo ]
           </p>
         </motion.div>
       </div>

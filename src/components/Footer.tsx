@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { Instagram, Facebook } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 
 // Custom X (Twitter) icon component since Lucide doesn't have the new X logo
 const XIcon = ({ size = 20, className = "" }) => (
@@ -20,16 +19,14 @@ interface FooterProps {
 }
 
 const Footer = ({ isVisible }: FooterProps) => {
-  const { t, i18n } = useTranslation();
-  
   const languages = [
-    { code: 'en-US', label: t('footer.languages.english-us') }, 
-    { code: 'it', label: t('footer.languages.italian') }
+    'English (US)', 
+    'English (UK)', 
+    'Italiano', 
+    'Deutsch', 
+    'Français (FR)', 
+    'Español (ES)'
   ];
-
-  const handleLanguageChange = (langCode: string) => {
-    i18n.changeLanguage(langCode);
-  };
 
   return (
     <motion.footer
@@ -46,17 +43,13 @@ const Footer = ({ isVisible }: FooterProps) => {
             {/* Legal Links */}
             <div>
               <nav className="flex flex-wrap gap-6 mb-8">
-                {[
-                  { key: 'terms', label: t('footer.legal.terms') },
-                  { key: 'privacy', label: t('footer.legal.privacy') },
-                  { key: 'privacyChoices', label: t('footer.legal.privacyChoices') }
-                ].map((link) => (
+                {['Terms', 'Privacy', 'Your Privacy Choices'].map((link) => (
                   <a
-                    key={link.key}
+                    key={link}
                     href="#"
                     className="typography-caption text-luxury-white hover:text-luxury-white-70 transition-colors duration-300"
                   >
-                    {link.label}
+                    {link}
                   </a>
                 ))}
               </nav>
@@ -65,17 +58,16 @@ const Footer = ({ isVisible }: FooterProps) => {
             {/* Language Options */}
             <div>
               <div className="flex flex-wrap gap-4">
-                {languages.map((lang) => (
+                {languages.map((lang, index) => (
                   <button
-                    key={lang.code}
-                    onClick={() => handleLanguageChange(lang.code)}
+                    key={lang}
                     className={`typography-caption transition-colors duration-300 ${
-                      i18n.language === lang.code 
+                      index === 0 
                         ? 'text-luxury-white' 
                         : 'text-luxury-white-50 hover:text-luxury-white-70'
                     }`}
                   >
-                    {lang.label}
+                    {lang}
                   </button>
                 ))}
               </div>
@@ -85,26 +77,16 @@ const Footer = ({ isVisible }: FooterProps) => {
           {/* Center Section - App Downloads */}
           <div className="text-center space-y-6">
             <h3 className="typography-caption text-luxury-white">
-              {t('footer.appDownload.title')}
+              Enter a world reserved for you:
             </h3>
             
             <div className="flex flex-col gap-3 justify-center">
-              <a 
-                href="https://apps.apple.com/us/app/ligaire/id6746082197?uo=2"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-luxury-minimal border border-luxury-white-30 hover:border-luxury-white text-sm py-2 px-4"
-              >
-                <span className="typography-caption">{t('footer.appDownload.appStore')}</span>
-              </a>
-              <a 
-                href="https://play.google.com/store/apps/details?id=com.ligaire.app&hl=ar&pli=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-luxury-minimal border border-luxury-white-30 hover:border-luxury-white text-sm py-2 px-4"
-              >
-                <span className="typography-caption">{t('footer.appDownload.googlePlay')}</span>
-              </a>
+              <button className="btn-luxury-minimal border border-luxury-white-30 hover:border-luxury-white text-sm py-2 px-4">
+                <span className="typography-caption">App Store</span>
+              </button>
+              <button className="btn-luxury-minimal border border-luxury-white-30 hover:border-luxury-white text-sm py-2 px-4">
+                <span className="typography-caption">Google Play</span>
+              </button>
             </div>
           </div>
           
@@ -113,34 +95,28 @@ const Footer = ({ isVisible }: FooterProps) => {
             {/* Social Media */}
             <div>
               <h3 className="typography-caption text-luxury-white mb-6">
-                {t('footer.social.title')}
+                Discover:
               </h3>
               
               <div className="flex gap-6 justify-center md:justify-start lg:justify-end">
                 <a
-                  href="https://www.instagram.com/ligaire/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="text-luxury-white hover:text-luxury-white-70 transition-colors duration-300"
-                  aria-label={t('footer.social.instagram')}
+                  aria-label="Instagram"
                 >
                   <Instagram size={20} />
                 </a>
                 <a
-                  href="https://x.com/ligaire"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="text-luxury-white hover:text-luxury-white-70 transition-colors duration-300"
-                  aria-label={t('footer.social.twitter')}
+                  aria-label="X (Twitter)"
                 >
                   <XIcon size={20} />
                 </a>
                 <a
-                  href="https://www.facebook.com/ligaire"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="text-luxury-white hover:text-luxury-white-70 transition-colors duration-300"
-                  aria-label={t('footer.social.facebook')}
+                  aria-label="Facebook"
                 >
                   <Facebook size={20} />
                 </a>
@@ -150,7 +126,7 @@ const Footer = ({ isVisible }: FooterProps) => {
             {/* Copyright */}
             <div>
               <p className="typography-caption text-luxury-white-50">
-                {t('footer.copyright')}
+                ©2025 Ligaire. All Rights Reserved.
               </p>
             </div>
           </div>
