@@ -1,12 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from '@/components/HeroSection';
+import Footer from '@/components/Footer';
+import { useFooterVisibility } from '@/hooks/useScrollPosition';
 
 const Index = () => {
+  const isFooterVisible = useFooterVisibility(50);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-luxury-black text-luxury-white overflow-x-hidden">
+      {/* Main Content */}
+      <main>
+        <HeroSection />
+        
+        {/* Add spacing so footer can slide up smoothly */}
+        <div className="h-screen bg-luxury-black" />
+      </main>
+      
+      {/* Footer - slides up on scroll */}
+      <Footer isVisible={isFooterVisible} />
     </div>
   );
 };

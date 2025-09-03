@@ -61,8 +61,34 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
 			},
+			luxury: {
+				black: 'hsl(var(--luxury-black))',
+				white: 'hsl(var(--luxury-white))',
+				'white-70': 'hsl(var(--luxury-white-70))',
+				'white-50': 'hsl(var(--luxury-white-50))',
+				'white-30': 'hsl(var(--luxury-white-30))',
+				'white-10': 'hsl(var(--luxury-white-10))'
+			}
+		},
+		fontFamily: {
+			'display': ['var(--font-display)', 'serif'],
+			'body': ['var(--font-body)', 'sans-serif'],
+			'playfair': ['Playfair Display', 'serif'],
+			'inter': ['Inter', 'sans-serif']
+		},
+		spacing: {
+			'luxury-xs': 'var(--luxury-spacing-xs)',
+			'luxury-sm': 'var(--luxury-spacing-sm)',
+			'luxury-md': 'var(--luxury-spacing-md)',
+			'luxury-lg': 'var(--luxury-spacing-lg)',
+			'luxury-xl': 'var(--luxury-spacing-xl)',
+			'luxury-2xl': 'var(--luxury-spacing-2xl)'
+		},
+		transitionTimingFunction: {
+			'luxury': 'var(--luxury-ease)',
+			'luxury-in-out': 'var(--luxury-ease-in-out)'
+		},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
