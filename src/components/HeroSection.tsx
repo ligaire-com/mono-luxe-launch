@@ -4,7 +4,7 @@ import heroBackground from '@/assets/hero-background.jpg';
 const HeroSection = () => {
   return (
     <section 
-      className="relative h-screen w-full overflow-hidden bg-luxury-black"
+      className="relative min-h-screen w-full overflow-hidden bg-luxury-black"
       style={{
         backgroundImage: `url(${heroBackground})`,
         backgroundSize: 'cover',
@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/40 z-10" />
       
       {/* Hero Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 md:px-8">
+      <div className="relative z-20 flex flex-col items-center justify-center min-h-screen text-center px-4 md:px-8 py-20">
         {/* Logo */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

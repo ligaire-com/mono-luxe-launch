@@ -14,7 +14,7 @@ export const useScrollPosition = () => {
   return scrollY;
 };
 
-export const useFooterVisibility = (threshold = 50) => {
+export const useFooterVisibility = (threshold = 200) => {
   const scrollY = useScrollPosition();
   
   // Show footer when scrolled past the threshold

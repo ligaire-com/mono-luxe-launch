@@ -10,9 +10,6 @@ const Index = () => {
       {/* Main Content */}
       <main>
         <HeroSection />
-        
-        {/* Content section to enable footer scroll trigger */}
-        <section className="h-96 bg-luxury-black" />
       </main>
       
       {/* Footer - slides up on scroll */}
