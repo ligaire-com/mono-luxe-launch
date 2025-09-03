@@ -7,7 +7,7 @@ const HeroSection = () => {
   
   return (
     <section 
-      className="relative w-full overflow-hidden bg-luxury-black"
+      className="relative w-full overflow-hidden bg-brand-black"
       style={{
         height: 'calc(100vh + 200px)', // Slightly taller than viewport to enable scroll
         backgroundImage: `url(${luxuryLifestyleBg})`,
@@ -40,7 +40,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="max-w-6xl mx-auto mb-6 sm:mb-8"
         >
-          <h2 className="font-playfair font-normal leading-[0.95] text-luxury-white text-center">
+          <h2 className="font-neue-haas font-normal leading-[0.95] text-brand-ink text-center">
             <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-2 sm:mb-4">
               {t('hero_title_1')}
             </span>
@@ -61,7 +61,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, width: 0 }}
           animate={{ opacity: 1, width: "4rem" }}
           transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
-          className="h-px bg-luxury-white-30 mx-auto mb-6 sm:mb-8"
+          className="h-px bg-brand-ink-30 mx-auto mb-6 sm:mb-8"
         />
         
         {/* Subheadline - Enhanced luxury styling */}
@@ -71,11 +71,11 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12"
         >
-          <p className="font-inter font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-luxury-white-70 leading-relaxed text-center tracking-wide">
+          <p className="font-inter font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-brand-ink-70 leading-relaxed text-center tracking-wide">
             <span className="italic font-normal">{t('hero_subtitle_ai')}</span> {t('hero_subtitle_text')}
             <br className="hidden sm:block" />
             <span className="block sm:inline"> </span>
-            <span className="font-medium text-luxury-white">{t('hero_subtitle_brand')}</span>.
+            <span className="font-medium text-brand-ink">{t('hero_subtitle_brand')}</span>.
           </p>
         </motion.div>
         
@@ -98,7 +98,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
           className="max-w-4xl mx-auto"
         >
-          <p className="text-xs sm:text-sm text-luxury-white-50 leading-relaxed">
+          <p className="text-xs sm:text-sm text-brand-stone leading-relaxed">
             {t('hero_cities')}
           </p>
         </motion.div>
@@ -111,11 +111,11 @@ const HeroSection = () => {
         transition={{ duration: 0.8, delay: 1.4 }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
       >
-        <div className="w-[1px] h-16 bg-luxury-white-30 relative">
+        <div className="w-[1px] h-16 bg-brand-ink-30 relative">
           <motion.div
             animate={{ y: [0, 20, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-0 left-0 w-full h-4 bg-gradient-to-b from-luxury-white to-transparent"
+            className="absolute top-0 left-0 w-full h-4 bg-gradient-to-b from-brand-ink to-transparent"
           />
         </div>
       </motion.div>

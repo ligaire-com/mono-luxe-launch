@@ -40,7 +40,7 @@ const Footer = ({ isVisible }: FooterProps) => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="bg-luxury-black border-t border-luxury-white-10"
+      className="bg-brand-black border-t border-brand-ink-10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
@@ -58,7 +58,7 @@ const Footer = ({ isVisible }: FooterProps) => {
                   <a
                     key={link.key}
                     href={link.href}
-                    className="typography-caption text-luxury-white hover:text-luxury-white-70 transition-colors duration-300"
+                    className="typography-caption text-brand-ink hover:text-brand-stone transition-colors duration-300"
                   >
                     {t(link.key)}
                   </a>
@@ -75,8 +75,8 @@ const Footer = ({ isVisible }: FooterProps) => {
                     onClick={() => changeLanguage(lang.code)}
                     className={`typography-caption transition-colors duration-300 ${
                       i18n.language === lang.code 
-                        ? 'text-luxury-white' 
-                        : 'text-luxury-white-50 hover:text-luxury-white-70'
+                        ? 'text-brand-ink' 
+                        : 'text-brand-stone hover:text-brand-ink-70'
                     }`}
                   >
                     {lang.name}
@@ -88,7 +88,7 @@ const Footer = ({ isVisible }: FooterProps) => {
           
           {/* Center Section - App Downloads */}
           <div className="text-center space-y-6">
-            <h3 className="typography-caption text-luxury-white">
+            <h3 className="typography-caption text-brand-ink">
               {t('footer_app_intro')}
             </h3>
             
@@ -97,7 +97,7 @@ const Footer = ({ isVisible }: FooterProps) => {
                 href="https://apps.apple.com/us/app/ligaire/id6746082197?uo=2"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-luxury-minimal border border-luxury-white-30 hover:border-luxury-white text-sm py-2 px-4"
+                className="btn-luxury-minimal border border-brand-ink-30 hover:border-brand-ink text-sm py-2 px-4"
               >
                 <span className="typography-caption">{t('footer_app_store')}</span>
               </a>
@@ -105,7 +105,7 @@ const Footer = ({ isVisible }: FooterProps) => {
                 href="https://play.google.com/store/apps/details?id=com.ligaire.app&hl=ar&pli=1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-luxury-minimal border border-luxury-white-30 hover:border-luxury-white text-sm py-2 px-4"
+                className="btn-luxury-minimal border border-brand-ink-30 hover:border-brand-ink text-sm py-2 px-4"
               >
                 <span className="typography-caption">{t('footer_google_play')}</span>
               </a>
@@ -116,7 +116,7 @@ const Footer = ({ isVisible }: FooterProps) => {
           <div className="space-y-6 sm:space-y-8 text-center md:text-left lg:text-right">
             {/* Social Media */}
             <div>
-              <h3 className="typography-caption text-luxury-white mb-6">
+              <h3 className="typography-caption text-brand-ink mb-6">
                 {t('footer_discover')}
               </h3>
               
@@ -125,7 +125,7 @@ const Footer = ({ isVisible }: FooterProps) => {
                   href="https://www.instagram.com/ligaire/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-luxury-white hover:text-luxury-white-70 transition-colors duration-300"
+                  className="text-brand-ink hover:text-brand-stone transition-colors duration-300"
                   aria-label="Instagram"
                 >
                   <Instagram size={20} />
@@ -134,7 +134,7 @@ const Footer = ({ isVisible }: FooterProps) => {
                   href="https://twitter.com/ligaire"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-luxury-white hover:text-luxury-white-70 transition-colors duration-300"
+                  className="text-brand-ink hover:text-brand-stone transition-colors duration-300"
                   aria-label="X (Twitter)"
                 >
                   <XIcon size={20} />
@@ -143,7 +143,7 @@ const Footer = ({ isVisible }: FooterProps) => {
                   href="https://facebook.com/ligaire"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-luxury-white hover:text-luxury-white-70 transition-colors duration-300"
+                  className="text-brand-ink hover:text-brand-stone transition-colors duration-300"
                   aria-label="Facebook"
                 >
                   <Facebook size={20} />
@@ -153,7 +153,7 @@ const Footer = ({ isVisible }: FooterProps) => {
             
             {/* Copyright */}
             <div>
-              <p className="typography-caption text-luxury-white-50">
+              <p className="typography-caption text-brand-stone">
                 {t('footer_copyright')}
               </p>
             </div>

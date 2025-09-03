@@ -62,32 +62,37 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 			},
-			luxury: {
-				black: 'hsl(var(--luxury-black))',
-				white: 'hsl(var(--luxury-white))',
-				'white-70': 'hsl(var(--luxury-white-70))',
-				'white-50': 'hsl(var(--luxury-white-50))',
-				'white-30': 'hsl(var(--luxury-white-30))',
-				'white-10': 'hsl(var(--luxury-white-10))'
+			brand: {
+				black: 'hsl(var(--brand-black))',
+				ink: 'hsl(var(--brand-ink))',
+				stone: 'hsl(var(--brand-stone))',
+				'ink-70': 'hsl(var(--brand-ink-70))',
+				'ink-50': 'hsl(var(--brand-ink-50))',
+				'ink-30': 'hsl(var(--brand-ink-30))',
+				'ink-10': 'hsl(var(--brand-ink-10))',
+				'stone-70': 'hsl(var(--brand-stone-70))',
+				'stone-50': 'hsl(var(--brand-stone-50))',
+				'stone-30': 'hsl(var(--brand-stone-30))',
+				'stone-10': 'hsl(var(--brand-stone-10))'
 			}
 		},
 		fontFamily: {
-			'display': ['var(--font-display)', 'serif'],
+			'display': ['var(--font-display)', 'sans-serif'],
 			'body': ['var(--font-body)', 'sans-serif'],
-			'playfair': ['Playfair Display', 'serif'],
+			'neue-haas': ['Neue Haas Grotesk Display', 'Inter', 'sans-serif'],
 			'inter': ['Inter', 'sans-serif']
 		},
 		spacing: {
-			'luxury-xs': 'var(--luxury-spacing-xs)',
-			'luxury-sm': 'var(--luxury-spacing-sm)',
-			'luxury-md': 'var(--luxury-spacing-md)',
-			'luxury-lg': 'var(--luxury-spacing-lg)',
-			'luxury-xl': 'var(--luxury-spacing-xl)',
-			'luxury-2xl': 'var(--luxury-spacing-2xl)'
+			'brand-xs': 'var(--luxury-spacing-xs)',
+			'brand-sm': 'var(--luxury-spacing-sm)',
+			'brand-md': 'var(--luxury-spacing-md)',
+			'brand-lg': 'var(--luxury-spacing-lg)',
+			'brand-xl': 'var(--luxury-spacing-xl)',
+			'brand-2xl': 'var(--luxury-spacing-2xl)'
 		},
 		transitionTimingFunction: {
-			'luxury': 'var(--luxury-ease)',
-			'luxury-in-out': 'var(--luxury-ease-in-out)'
+			'brand': 'var(--luxury-ease)',
+			'brand-in-out': 'var(--luxury-ease-in-out)'
 		},
 			borderRadius: {
 				lg: 'var(--radius)',

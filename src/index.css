@@ -2,20 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Luxury Monochromatic Design System - Pure Black & White Aesthetic */
+/* Brand Visual Guideline - Neue Haas Grotesk & Refined Palette */
 
 @layer base {
   :root {
-    /* Core Monochromatic Palette */
-    --luxury-black: 0 0% 0%;
-    --luxury-white: 0 0% 100%;
-    --luxury-white-70: 0 0% 100% / 0.7;
-    --luxury-white-50: 0 0% 100% / 0.5;
-    --luxury-white-30: 0 0% 100% / 0.3;
-    --luxury-white-10: 0 0% 100% / 0.1;
+    /* Brand Color Palette */
+    --brand-black: 240 3% 11%;        /* #1B1B1C */
+    --brand-ink: 210 4% 89%;          /* #E2E3E4 */
+    --brand-stone: 0 1% 54%;          /* #8A8989 */
+    
+    /* Subtle Tints */
+    --brand-ink-70: 210 4% 89% / 0.7;
+    --brand-ink-50: 210 4% 89% / 0.5;
+    --brand-ink-30: 210 4% 89% / 0.3;
+    --brand-ink-10: 210 4% 89% / 0.1;
+    --brand-stone-70: 0 1% 54% / 0.7;
+    --brand-stone-50: 0 1% 54% / 0.5;
+    --brand-stone-30: 0 1% 54% / 0.3;
+    --brand-stone-10: 0 1% 54% / 0.1;
     
     /* Typography Scale */
-    --font-display: 'Playfair Display', serif;
+    --font-display: 'Neue Haas Grotesk Display', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     
     /* Luxury Spacing */
@@ -31,18 +38,18 @@
     --luxury-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     
     /* Design System Tokens */
-    --background: var(--luxury-black);
-    --foreground: var(--luxury-white);
-    --primary: var(--luxury-white);
-    --primary-foreground: var(--luxury-black);
-    --secondary: var(--luxury-black);
-    --secondary-foreground: var(--luxury-white);
-    --muted: var(--luxury-white-30);
-    --muted-foreground: var(--luxury-white-70);
-    --accent: var(--luxury-white);
-    --accent-foreground: var(--luxury-black);
-    --border: var(--luxury-white-10);
-    --ring: var(--luxury-white);
+    --background: var(--brand-black);
+    --foreground: var(--brand-ink);
+    --primary: var(--brand-ink);
+    --primary-foreground: var(--brand-black);
+    --secondary: var(--brand-stone);
+    --secondary-foreground: var(--brand-ink);
+    --muted: var(--brand-stone-30);
+    --muted-foreground: var(--brand-stone);
+    --accent: var(--brand-ink);
+    --accent-foreground: var(--brand-black);
+    --border: var(--brand-ink-10);
+    --ring: var(--brand-ink);
     --radius: 0rem;
   }
 }
@@ -84,7 +91,7 @@
     position: fixed;
     width: 20px;
     height: 20px;
-    border: 1px solid hsl(var(--luxury-white));
+    border: 1px solid hsl(var(--brand-ink));
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
@@ -127,16 +134,16 @@
     text-transform: uppercase;
   }
   
-  /* Luxury Button Variants */
+  /* Brand Button Variants */
   .btn-luxury {
-    @apply inline-flex items-center justify-center px-8 py-4 border border-white text-white bg-transparent;
+    @apply inline-flex items-center justify-center px-8 py-4 border border-brand-ink text-brand-ink bg-transparent;
     @apply typography-caption transition-all duration-300 ease-out;
-    @apply hover:bg-white hover:text-black;
+    @apply hover:bg-brand-ink hover:text-brand-black;
   }
   
   .btn-luxury-minimal {
     @apply inline-flex items-center justify-center px-6 py-3;
-    @apply typography-caption text-white transition-opacity duration-300 ease-out;
+    @apply typography-caption text-brand-ink transition-opacity duration-300 ease-out;
     @apply hover:opacity-70;
   }
   
