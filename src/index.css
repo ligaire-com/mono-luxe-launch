@@ -54,11 +54,25 @@
 
   html {
     scroll-behavior: smooth;
+    /* Hide scrollbar for WebKit browsers */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+  html::-webkit-scrollbar {
+    display: none; /* WebKit browsers (Chrome, Safari, Edge) */
   }
 
   body {
     @apply bg-background text-foreground font-body antialiased;
     font-family: var(--font-body);
+    /* Hide scrollbar for WebKit browsers */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* WebKit browsers (Chrome, Safari, Edge) */
   }
   
   /* Custom cursor for luxury feel */
