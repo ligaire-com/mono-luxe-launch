@@ -30,27 +30,49 @@ const HeroSection = () => {
           </h1>
         </motion.div>
         
-        {/* Main Headline */}
+        {/* Main Headline - Split for better luxury impact */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="max-w-5xl mx-auto mb-6 sm:mb-8"
+          className="max-w-6xl mx-auto mb-6 sm:mb-8"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light leading-tight text-center text-luxury-white">
-            STEP INTO AN EXCLUSIVE REALM WHERE DISTINCTION KNOWS NO BOUNDS.
+          <h2 className="font-playfair font-normal leading-[0.95] text-luxury-white text-center">
+            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-2 sm:mb-4">
+              STEP INTO AN
+            </span>
+            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-2 sm:mb-4 tracking-wider">
+              EXCLUSIVE REALM
+            </span>
+            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest opacity-90">
+              WHERE DISTINCTION
+            </span>
+            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest opacity-90">
+              KNOWS NO BOUNDS.
+            </span>
           </h2>
         </motion.div>
         
-        {/* Subheadline */}
+        {/* Elegant Separator */}
+        <motion.div
+          initial={{ opacity: 0, width: 0 }}
+          animate={{ opacity: 1, width: "4rem" }}
+          transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
+          className="h-px bg-luxury-white-30 mx-auto mb-6 sm:mb-8"
+        />
+        
+        {/* Subheadline - Enhanced luxury styling */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="max-w-3xl mx-auto mb-8 sm:mb-10 md:mb-12"
+          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          className="max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12"
         >
-          <p className="text-base sm:text-lg md:text-xl text-luxury-white-70 leading-relaxed">
-            AI-powered lifestyle and luxury services powered by Connected VIP.
+          <p className="font-inter font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-luxury-white-70 leading-relaxed text-center tracking-wide">
+            <span className="italic font-normal">AI-powered</span> lifestyle and luxury services
+            <br className="hidden sm:block" />
+            <span className="block sm:inline"> powered by </span>
+            <span className="font-medium text-luxury-white">Connected VIP</span>.
           </p>
         </motion.div>
         
@@ -58,7 +80,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
           className="mb-8 sm:mb-12 md:mb-16"
         >
           <button className="btn-luxury text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4">
@@ -70,7 +92,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
           className="max-w-4xl mx-auto"
         >
           <p className="text-xs sm:text-sm text-luxury-white-50 leading-relaxed">
@@ -83,7 +105,7 @@ const HeroSection = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 1.2 }}
+        transition={{ duration: 0.8, delay: 1.4 }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
       >
         <div className="w-[1px] h-16 bg-luxury-white-30 relative">
