@@ -24,11 +24,7 @@ const Footer = ({ isVisible }: FooterProps) => {
   
   const languages = [
     { code: 'en-US', label: t('footer.languages.english-us') }, 
-    { code: 'en-GB', label: t('footer.languages.english-uk') }, 
-    { code: 'it', label: t('footer.languages.italian') }, 
-    { code: 'de', label: t('footer.languages.german') }, 
-    { code: 'fr-FR', label: t('footer.languages.french-fr') }, 
-    { code: 'es-ES', label: t('footer.languages.spanish-es') }
+    { code: 'it', label: t('footer.languages.italian') }
   ];
 
   const handleLanguageChange = (langCode: string) => {
