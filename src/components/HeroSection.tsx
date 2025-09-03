@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import heroBackground from '@/assets/hero-background.jpg';
+import luxuryLifestyleBg from '@/assets/luxury-lifestyle-bg.jpg';
 
 const HeroSection = () => {
   return (
@@ -7,7 +7,7 @@ const HeroSection = () => {
       className="relative w-full overflow-hidden bg-luxury-black"
       style={{
         height: 'calc(100vh + 200px)', // Slightly taller than viewport to enable scroll
-        backgroundImage: `url(${heroBackground})`,
+        backgroundImage: `url(${luxuryLifestyleBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
