@@ -11,8 +11,8 @@ const Index = () => {
       <main>
         <HeroSection />
         
-        {/* Minimal content section to enable scroll */}
-        <section className="h-32 bg-luxury-black" />
+        {/* Content section to enable footer scroll trigger */}
+        <section className="h-96 bg-luxury-black" />
       </main>
       
       {/* Footer - slides up on scroll */}
