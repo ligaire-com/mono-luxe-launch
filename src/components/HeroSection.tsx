@@ -21,14 +21,14 @@ const HeroSection = () => {
       
       {/* Hero Content - centered in viewport with better mobile spacing */}
       <div className="relative z-20 flex flex-col items-center justify-center h-screen text-center px-4 sm:px-6 md:px-8">
-        {/* Logo */}
+        {/* Brand Logo - Enhanced for prominence */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-8 sm:mb-12 md:mb-16 lg:mb-20"
         >
-          <h1 className="typography-caption text-luxury-spacing-wide mb-4 text-sm sm:text-base">
+          <h1 className="font-neue-haas font-medium text-brand-ink text-center tracking-[0.3em] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
             {t('brand_name')}
           </h1>
         </motion.div>
