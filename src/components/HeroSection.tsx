@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/60 z-10" />
       
       {/* Hero Content - Positioned according to vertical ratios */}
-      <div className="relative z-20 flex flex-col justify-between text-center px-6 pb-[15vh] min-h-[100dvh] sm:min-h-screen">
+      <div className="relative z-20 flex flex-col text-center px-6 min-h-[100dvh] sm:min-h-screen">
         {/* Brand Logo - ~10% from top */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -65,8 +65,8 @@ const HeroSection = () => {
           className="h-px bg-brand-ink-30 mx-auto mb-6"
         />
         
-        {/* Launching Soon + Cities - ~70% from top */}
-        <div className="space-y-1">
+        {/* Launching Soon + Cities - Last 10% of hero */}
+        <div className="absolute bottom-[10vh] left-1/2 transform -translate-x-1/2 w-full px-6 space-y-1">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
