@@ -87,7 +87,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
             className="max-w-lg sm:max-w-xl mx-auto"
           >
-            <p className="font-neue-haas text-brand-ink font-normal leading-[36pt] tracking-[0] text-[30pt] text-center">
+            <p className="font-neue-haas text-brand-ink font-normal leading-[36pt] tracking-[0] text-[18pt] text-center whitespace-nowrap">
               [ {t('hero_cities')} ]
             </p>
           </motion.div>
