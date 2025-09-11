@@ -27,7 +27,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="pt-[8vh] sm:pt-[10vh] mb-auto"
         >
-          <h1 className="font-neue-haas text-white font-light text-[24pt] sm:text-[28pt] tracking-[0.3em] uppercase text-center">
+          <h1 className="ligaire-logo text-brand-ink uppercase text-center">
             LIGAIRE
           </h1>
         </motion.div>
