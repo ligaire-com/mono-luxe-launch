@@ -26,9 +26,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-8 sm:mb-12 md:mb-16 lg:mb-20"
+          className="mb-4 sm:mb-6 md:mb-8 lg:mb-10"
         >
-          <h1 className="typography-caption text-luxury-spacing-wide mb-4 text-base sm:text-lg md:text-xl">
+          <h1 className="typography-caption text-luxury-spacing-wide mb-4 text-sm sm:text-base md:text-lg">
             {t('brand_name')}
           </h1>
         </motion.div>
@@ -40,17 +40,17 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="max-w-6xl mx-auto mb-6 sm:mb-8"
         >
-          <h2 className="font-neue-haas font-normal leading-[0.95] text-brand-ink text-center">
-            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-2 sm:mb-4">
+          <h2 className="font-neue-haas font-normal leading-[0.85] text-brand-ink text-center">
+            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-1 sm:mb-2">
               {t('hero_title_1')}
             </span>
-            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-2 sm:mb-4 tracking-wider">
+            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-1 sm:mb-2 tracking-wider">
               {t('hero_title_2')}
             </span>
-            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest opacity-90">
+            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-widest opacity-90">
               {t('hero_title_3')}
             </span>
-            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-widest opacity-90">
+            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-widest opacity-90">
               {t('hero_title_4')}
             </span>
           </h2>
@@ -71,11 +71,11 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12"
         >
-          <p className="font-inter font-light text-lg sm:text-xl md:text-2xl lg:text-3xl text-brand-ink-90 leading-relaxed text-center tracking-wide">
-            <span className="italic font-normal">{t('hero_subtitle_ai')}</span> {t('hero_subtitle_text')}
+          <p className="font-inter font-light text-base sm:text-lg md:text-xl lg:text-2xl text-brand-ink-90 leading-relaxed text-center tracking-wide">
+            <span className="font-normal">{t('hero_subtitle_ai')}</span> {t('hero_subtitle_text')}
             <br className="hidden sm:block" />
             <span className="block sm:inline"> </span>
-            <span className="font-medium text-brand-ink">{t('hero_subtitle_brand')}</span>.
+            <span className="font-medium text-brand-ink text-sm sm:text-base md:text-lg lg:text-xl">{t('hero_subtitle_brand')}</span>.
           </p>
         </motion.div>
         
@@ -86,7 +86,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
           className="mb-8 sm:mb-12 md:mb-16"
         >
-          <button className="btn-luxury text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4">
+          <button className="btn-luxury-minimal text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4">
             {t('hero_cta')}
           </button>
         </motion.div>
@@ -98,7 +98,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
           className="max-w-4xl mx-auto"
         >
-          <p className="text-xs sm:text-sm text-brand-ink-70 leading-relaxed">
+          <p className="text-xs sm:text-sm text-brand-ink leading-relaxed font-medium tracking-wide">
             {t('hero_cities')}
           </p>
         </motion.div>
