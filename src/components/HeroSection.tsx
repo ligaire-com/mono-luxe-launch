@@ -42,8 +42,20 @@ const HeroSection = () => {
         >
           <h2 className="font-neue-haas text-brand-ink text-center" style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: '200', lineHeight: '1.2', letterSpacing: '0.02em' }}>
             <div className="whitespace-nowrap">STEP INTO AN EXCLUSIVE REALM</div>
-            <div className="whitespace-nowrap">WHERE DISTINCTION KNOWS NO BOUNDS.</div>
+            <div className="whitespace-nowrap mb-4">WHERE DISTINCTION KNOWS NO BOUNDS.</div>
           </h2>
+          
+          {/* Subheadline directly under second line */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+            className="text-center"
+          >
+            <p className="text-base sm:text-lg text-brand-ink-90 leading-tight whitespace-nowrap">
+              {t('hero_subtitle_ai')} {t('hero_subtitle_text')} {t('hero_subtitle_brand')}.
+            </p>
+          </motion.div>
         </motion.div>
         
         {/* Elegant Separator */}
@@ -53,18 +65,6 @@ const HeroSection = () => {
           transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
           className="h-px bg-brand-ink-30 mx-auto mb-6 sm:mb-8"
         />
-        
-        {/* Subheadline - Enhanced luxury styling */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="max-w-lg sm:max-w-xl mx-auto mb-16 sm:mb-20"
-        >
-          <p className="text-base sm:text-lg text-brand-ink-90 leading-tight text-center">
-            {t('hero_subtitle_ai')} {t('hero_subtitle_text')} {t('hero_subtitle_brand')}.
-          </p>
-        </motion.div>
         
         {/* CTA Button */}
         <motion.div
