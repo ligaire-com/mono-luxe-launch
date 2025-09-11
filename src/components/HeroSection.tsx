@@ -27,11 +27,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="pt-[8vh] sm:pt-[10vh] mb-auto"
         >
-          <img 
-            src="/lovable-uploads/2c7a9bd0-30c9-4c62-ae3a-e2764d146bd3.png" 
-            alt="Brand Logo" 
-            className="h-8 sm:h-10 md:h-12 w-auto object-contain mx-auto"
-          />
+          <h1 className="font-neue-haas text-white font-light text-[24pt] sm:text-[28pt] tracking-[0.3em] uppercase text-center">
+            LIGAIRE
+          </h1>
         </motion.div>
         
         {/* Main Quote - ~40-50% from top (centered) */}
