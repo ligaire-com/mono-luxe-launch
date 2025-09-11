@@ -19,16 +19,16 @@ const HeroSection = () => {
       {/* Dark overlay for better text contrast */}
       <div className="absolute inset-0 bg-black/60 z-10" />
       
-      {/* Hero Content - centered in viewport with better mobile spacing */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-screen text-center px-4 sm:px-6 md:px-8">
+      {/* Hero Content - Mobile optimized to match reference */}
+      <div className="relative z-20 flex flex-col items-center justify-center min-h-screen text-center px-6 py-20">
         {/* Brand Logo */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-4 sm:mb-6 md:mb-8 lg:mb-10"
+          className="mb-16 sm:mb-20"
         >
-          <h1 className="typography-caption text-luxury-spacing-wide mb-4 text-sm sm:text-base md:text-lg">
+          <h1 className="typography-caption text-luxury-spacing-wide text-sm sm:text-base tracking-[0.3em]">
             {t('brand_name')}
           </h1>
         </motion.div>
@@ -38,19 +38,19 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="max-w-6xl mx-auto mb-6 sm:mb-8"
+          className="max-w-sm sm:max-w-2xl mx-auto mb-12 sm:mb-16"
         >
-          <h2 className="font-neue-haas font-normal leading-[0.85] text-brand-ink text-center">
-            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-1 sm:mb-2">
+          <h2 className="font-neue-haas font-normal leading-[0.9] text-brand-ink text-center">
+            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-1">
               {t('hero_title_1')}
             </span>
-            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-1 sm:mb-2 tracking-wider">
+            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-1">
               {t('hero_title_2')}
             </span>
-            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-widest opacity-90">
+            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-1">
               {t('hero_title_3')}
             </span>
-            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-widest opacity-90">
+            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl">
               {t('hero_title_4')}
             </span>
           </h2>
@@ -69,13 +69,10 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12"
+          className="max-w-xs sm:max-w-lg mx-auto mb-12 sm:mb-16"
         >
-          <p className="font-inter font-light text-base sm:text-lg md:text-xl lg:text-2xl text-brand-ink-90 leading-relaxed text-center tracking-wide">
-            <span className="font-normal">{t('hero_subtitle_ai')}</span> {t('hero_subtitle_text')}
-            <br className="hidden sm:block" />
-            <span className="block sm:inline"> </span>
-            <span className="font-medium text-brand-ink text-sm sm:text-base md:text-lg lg:text-xl">{t('hero_subtitle_brand')}</span>.
+          <p className="text-sm sm:text-base text-brand-ink-90 leading-relaxed text-center">
+            {t('hero_subtitle_ai')} {t('hero_subtitle_text')} {t('hero_subtitle_brand')}.
           </p>
         </motion.div>
         
@@ -84,11 +81,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-          className="mb-8 sm:mb-12 md:mb-16"
+          className="mb-8 sm:mb-12"
         >
-          <button className="btn-luxury-minimal text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4">
+          <div className="text-sm sm:text-base text-brand-ink font-normal tracking-wide">
             {t('hero_cta')}
-          </button>
+          </div>
         </motion.div>
         
         {/* Cities List */}
@@ -96,10 +93,10 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
-          className="max-w-4xl mx-auto"
+          className="max-w-xs sm:max-w-lg mx-auto"
         >
-          <p className="text-xs sm:text-sm text-brand-ink leading-relaxed font-medium tracking-wide">
-            {t('hero_cities')}
+          <p className="text-sm sm:text-base text-brand-ink leading-relaxed font-normal">
+            [ {t('hero_cities')} ]
           </p>
         </motion.div>
       </div>

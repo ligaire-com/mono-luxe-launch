@@ -10,11 +10,11 @@ const resources = {
       hero_title_2: 'EXCLUSIVE REALM',
       hero_title_3: 'WHERE DISTINCTION',
       hero_title_4: 'KNOWS NO BOUNDS.',
-      hero_subtitle_ai: 'Exclusive',
-      hero_subtitle_text: 'lifestyle and luxury services powered by',
+      hero_subtitle_ai: 'AI-powered',
+      hero_subtitle_text: 'lifestyle and luxury services, powered by',
       hero_subtitle_brand: 'Connected VIP',
       hero_cta: 'LAUNCHING SOON',
-      hero_cities: '[ Monaco - London - Dubai - El Gouna - North Coast - Cairo ]',
+      hero_cities: 'Monaco - London - Dubai - El Gouna - North Coast - Cairo',
       
       // Footer
       footer_legal_terms: 'Terms',
