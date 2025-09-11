@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/60 z-10" />
       
       {/* Hero Content - Positioned according to vertical ratios */}
-      <div className="relative z-20 flex flex-col min-h-screen text-center px-6 pb-[10vh] sm:pb-[12vh]">
+      <div className="relative z-20 flex flex-col min-h-screen text-center px-6">
         {/* Brand Logo - ~10% from top */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -65,13 +65,12 @@ const HeroSection = () => {
           className="h-px bg-brand-ink-30 mx-auto mb-6"
         />
         
-        {/* Launching Soon + Cities - Closer together with 10% bottom padding from wrapper */}
-        <div className="mt-auto space-y-1">
+        {/* Launching Soon + Cities - anchored 10% above footer */}
+        <div className="absolute bottom-[10vh] left-1/2 -translate-x-1/2 w-full px-6 space-y-1">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-            className="mb-1"
           >
             <div className="font-neue-haas text-brand-ink font-light leading-[43.2pt] tracking-[0] text-[36pt] uppercase text-center">
               {t('hero_cta')}
