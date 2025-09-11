@@ -19,13 +19,13 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/60 z-10" />
       
       {/* Hero Content - Positioned according to vertical ratios */}
-      <div className="relative z-20 flex flex-col min-h-screen text-center px-6">
+      <div className="relative z-20 flex flex-col min-h-screen justify-between text-center px-6 pb-[10vh]">
         {/* Brand Logo - ~10% from top */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="pt-[8vh] sm:pt-[10vh] mb-auto"
+          className="pt-[8vh] sm:pt-[10vh]"
         >
           <h1 className="ligaire-logo text-brand-ink uppercase text-center">
             LIGAIRE
@@ -37,7 +37,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="max-w-5xl mx-auto mb-auto mt-[18vh] mb-[12vh] sm:mt-[30vh] sm:mb-[20vh]"
+          className="max-w-5xl mx-auto mt-[18vh] sm:mt-[30vh]"
         >
           <h2 className="font-neue-haas text-brand-ink text-center font-light leading-[1.2] tracking-[0] text-[44pt]">
             <div className="whitespace-normal sm:whitespace-nowrap">STEP INTO AN EXCLUSIVE REALM</div>
@@ -66,12 +66,12 @@ const HeroSection = () => {
         />
         
         {/* Launching Soon + Cities - ~70% from top */}
-        <div className="mb-auto">
+        <div className="space-y-1">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-            className="mb-2"
+            className=""
           >
             <div className="font-neue-haas text-brand-ink font-light leading-[43.2pt] tracking-[0] text-[36pt] uppercase text-center">
               {t('hero_cta')}
@@ -85,7 +85,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
             className="max-w-lg sm:max-w-xl mx-auto"
           >
-            <p className="font-neue-haas text-brand-ink font-normal leading-[36pt] tracking-[0] text-[18pt] text-center whitespace-nowrap">
+            <p className="font-neue-haas text-brand-ink font-normal leading-[36pt] tracking-[0] text-[18pt] text-center whitespace-normal sm:whitespace-nowrap">
               [ {t('hero_cities')} ]
             </p>
           </motion.div>
