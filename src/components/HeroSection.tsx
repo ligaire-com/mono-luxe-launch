@@ -41,7 +41,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="max-w-5xl mx-auto mb-auto mt-[18vh] mb-[12vh] sm:mt-[30vh] sm:mb-[20vh]"
         >
-          <h2 className="font-neue-haas text-brand-ink text-center font-[200] leading-[1.2] tracking-[0.01em] sm:tracking-[0.02em] text-[clamp(22px,6vw,32px)] sm:text-[clamp(28px,4vw,48px)]">
+          <h2 className="font-neue-haas text-brand-ink text-center font-bold leading-[1.2] tracking-[0.01em] sm:tracking-[0.02em] text-[clamp(22px,6vw,32px)] sm:text-[clamp(28px,4vw,48px)]">
             <div className="whitespace-normal sm:whitespace-nowrap">STEP INTO AN EXCLUSIVE REALM</div>
             <div className="whitespace-normal sm:whitespace-nowrap mb-4">WHERE DISTINCTION KNOWS NO BOUNDS.</div>
           </h2>
