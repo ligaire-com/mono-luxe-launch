@@ -60,7 +60,7 @@ const Footer = ({ isVisible }: FooterProps) => {
           <div className="space-y-8 footer-section-hover">
             {/* Legal Links */}
             <div>
-              <nav className="flex flex-wrap gap-6 mb-8">
+              <nav className="flex flex-wrap gap-6 mb-8 justify-center md:justify-start">
                 {[
                   { key: 'footer_legal_terms', href: '#' },
                   { key: 'footer_legal_privacy', href: '#' },
