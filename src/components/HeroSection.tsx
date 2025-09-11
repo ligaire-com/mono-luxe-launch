@@ -40,7 +40,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="max-w-2xl sm:max-w-4xl mx-auto mb-8 sm:mb-12"
         >
-          <h2 className="font-neue-haas font-light leading-[1.1] text-brand-ink text-center" style={{ fontSize: '48pt' }}>
+          <h2 className="font-neue-haas font-extralight leading-[1.1] text-brand-ink text-center" style={{ fontSize: '48pt', fontWeight: '200' }}>
             <span className="block mb-1">
               {t('hero_title_1')}
             </span>
