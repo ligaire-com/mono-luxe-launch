@@ -44,7 +44,7 @@ const HeroSection = () => {
             <span className="block mb-1 whitespace-nowrap">
               {t('hero_title_1')}
             </span>
-            <span className="block">
+            <span className="block whitespace-nowrap">
               {t('hero_title_2')}
             </span>
           </h2>
