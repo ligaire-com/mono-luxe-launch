@@ -53,7 +53,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
             className="text-center"
           >
-            <p className="text-sm sm:text-lg text-brand-ink-90 leading-tight whitespace-normal sm:whitespace-nowrap">
+            <p className="font-neue-haas text-brand-ink-90 font-extralight leading-[36pt] tracking-[0] text-[30pt] text-center whitespace-normal sm:whitespace-nowrap">
               {t('hero_subtitle_ai')} {t('hero_subtitle_text')} {t('hero_subtitle_brand')}.
             </p>
           </motion.div>
