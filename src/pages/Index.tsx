@@ -13,7 +13,7 @@ const Index = () => {
       </main>
       
       {/* Footer slides up on scroll */}
-      <Footer isVisible={isFooterVisible} />
+      {isFooterVisible && <Footer isVisible={true} />}
     </div>
   );
 };
