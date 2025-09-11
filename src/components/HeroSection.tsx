@@ -28,7 +28,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16 sm:mb-20"
         >
-          <h1 className="typography-caption text-luxury-spacing-wide text-sm sm:text-base tracking-[0.3em]">
+          <h1 className="text-lg sm:text-xl md:text-2xl text-brand-ink tracking-[0.4em] font-normal uppercase">
             {t('brand_name')}
           </h1>
         </motion.div>
@@ -38,20 +38,14 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="max-w-sm sm:max-w-2xl mx-auto mb-12 sm:mb-16"
+          className="max-w-2xl sm:max-w-4xl mx-auto mb-8 sm:mb-12"
         >
-          <h2 className="font-neue-haas font-normal leading-[0.9] text-brand-ink text-center">
-            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-1">
-              {t('hero_title_1')}
+          <h2 className="font-neue-haas font-normal leading-[1.1] text-brand-ink text-center">
+            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-1">
+              {t('hero_title_1')} {t('hero_title_2')}
             </span>
-            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-1">
-              {t('hero_title_2')}
-            </span>
-            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-1">
-              {t('hero_title_3')}
-            </span>
-            <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-              {t('hero_title_4')}
+            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+              {t('hero_title_3')} {t('hero_title_4')}
             </span>
           </h2>
         </motion.div>
@@ -69,9 +63,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="max-w-xs sm:max-w-lg mx-auto mb-12 sm:mb-16"
+          className="max-w-lg sm:max-w-xl mx-auto mb-16 sm:mb-20"
         >
-          <p className="text-sm sm:text-base text-brand-ink-90 leading-relaxed text-center">
+          <p className="text-base sm:text-lg text-brand-ink-90 leading-relaxed text-center">
             {t('hero_subtitle_ai')} {t('hero_subtitle_text')} {t('hero_subtitle_brand')}.
           </p>
         </motion.div>
@@ -81,9 +75,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-          className="mb-8 sm:mb-12"
+          className="mb-6 sm:mb-8"
         >
-          <div className="text-sm sm:text-base text-brand-ink font-normal tracking-wide">
+          <div className="text-base sm:text-lg text-brand-ink font-normal tracking-wide uppercase">
             {t('hero_cta')}
           </div>
         </motion.div>
@@ -93,9 +87,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
-          className="max-w-xs sm:max-w-lg mx-auto"
+          className="max-w-lg sm:max-w-xl mx-auto"
         >
-          <p className="text-sm sm:text-base text-brand-ink leading-relaxed font-normal">
+          <p className="text-base sm:text-lg text-brand-ink leading-relaxed font-normal">
             [ {t('hero_cities')} ]
           </p>
         </motion.div>
