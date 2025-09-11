@@ -38,15 +38,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="max-w-2xl sm:max-w-4xl mx-auto mb-8 sm:mb-12"
+          className="max-w-5xl mx-auto mb-8 sm:mb-12"
         >
-          <h2 className="font-neue-haas font-extralight leading-[1.1] text-brand-ink text-center" style={{ fontSize: '48pt', fontWeight: '200' }}>
-            <span className="block mb-1 whitespace-nowrap">
-              {t('hero_title_1')}
-            </span>
-            <span className="block whitespace-nowrap">
-              {t('hero_title_2')}
-            </span>
+          <h2 className="font-neue-haas text-brand-ink text-center" style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: '200', lineHeight: '1.2', letterSpacing: '0.02em' }}>
+            STEP INTO AN EXCLUSIVE REALM<br />
+            WHERE DISTINCTION KNOWS NO BOUNDS.
           </h2>
         </motion.div>
         
