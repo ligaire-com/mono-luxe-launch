@@ -20,34 +20,30 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/60 z-10" />
       
       {/* Hero Content - Positioned according to vertical ratios */}
-      <div className="relative z-20 flex flex-col justify-between h-screen text-center px-4 sm:px-6">
+      <div className="relative z-20 flex flex-col min-h-screen text-center px-6">
         {/* Brand Logo - ~10% from top */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="pt-[8vh] sm:pt-[10vh] flex-shrink-0"
+          className="pt-[10vh] mb-auto"
         >
-          <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-brand-ink tracking-[0.3em] sm:tracking-[0.4em] font-normal uppercase">
+          <h1 className="text-lg sm:text-xl md:text-2xl text-brand-ink tracking-[0.4em] font-normal uppercase">
             {t('brand_name')}
           </h1>
         </motion.div>
         
-        {/* Main Quote - Centered */}
+        {/* Main Quote - ~40-50% from top (centered) */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="flex-1 flex flex-col justify-center max-w-6xl mx-auto px-2"
+          className="max-w-5xl mx-auto mb-auto"
+          style={{ marginTop: '30vh', marginBottom: '20vh' }}
         >
-          <h2 className="font-neue-haas text-brand-ink text-center font-light leading-[1.1] sm:leading-[1.2]" 
-              style={{ 
-                fontSize: 'clamp(20px, 5.5vw, 48px)', 
-                letterSpacing: 'clamp(0.01em, 0.02em, 0.02em)',
-                marginBottom: 'clamp(16px, 4vw, 32px)'
-              }}>
-            <div className="sm:whitespace-nowrap">STEP INTO AN EXCLUSIVE REALM</div>
-            <div className="sm:whitespace-nowrap">WHERE DISTINCTION KNOWS NO BOUNDS.</div>
+          <h2 className="font-neue-haas text-brand-ink text-center" style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: '200', lineHeight: '1.2', letterSpacing: '0.02em' }}>
+            <div className="whitespace-nowrap">STEP INTO AN EXCLUSIVE REALM</div>
+            <div className="whitespace-nowrap mb-4">WHERE DISTINCTION KNOWS NO BOUNDS.</div>
           </h2>
           
           {/* Subheadline directly under second line */}
@@ -55,9 +51,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-            className="text-center mt-4 sm:mt-6"
+            className="text-center"
           >
-            <p className="text-sm sm:text-base md:text-lg text-brand-ink-90 leading-tight sm:whitespace-nowrap px-2">
+            <p className="text-base sm:text-lg text-brand-ink-90 leading-tight whitespace-nowrap">
               {t('hero_subtitle_ai')} {t('hero_subtitle_text')} {t('hero_subtitle_brand')}.
             </p>
           </motion.div>
@@ -71,15 +67,15 @@ const HeroSection = () => {
           className="h-px bg-brand-ink-30 mx-auto mb-6"
         />
         
-        {/* Launching Soon + Cities - Bottom section */}
-        <div className="pb-[12vh] sm:pb-[10vh] flex-shrink-0">
+        {/* Launching Soon + Cities - ~70% from top */}
+        <div className="mb-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-            className="mb-3 sm:mb-4"
+            className="mb-2"
           >
-            <div className="text-sm sm:text-base md:text-lg text-brand-ink font-normal tracking-wide uppercase">
+            <div className="text-base sm:text-lg text-brand-ink font-normal tracking-wide uppercase">
               {t('hero_cta')}
             </div>
           </motion.div>
@@ -89,9 +85,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
-            className="max-w-sm sm:max-w-lg md:max-w-xl mx-auto px-2"
+            className="max-w-lg sm:max-w-xl mx-auto"
           >
-            <p className="text-sm sm:text-base md:text-lg text-brand-ink leading-relaxed font-normal">
+            <p className="text-base sm:text-lg text-brand-ink leading-relaxed font-normal">
               [ {t('hero_cities')} ]
             </p>
           </motion.div>
