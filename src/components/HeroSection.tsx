@@ -27,7 +27,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="pt-[8vh] sm:pt-[10vh]"
         >
-          <h1 className="ligaire-logo text-brand-ink uppercase text-center">
+          <h1 className="ligaire-logo text-brand-ink uppercase text-center text-[32px] sm:text-[inherit]">
             LIGAIRE
           </h1>
         </motion.div>
@@ -39,9 +39,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="max-w-5xl mx-auto mt-[18vh] sm:mt-[30vh]"
         >
-          <h2 className="font-neue-haas text-brand-ink text-center font-light leading-[1.2] tracking-[0] text-[44pt]">
+          <h2 className="font-neue-haas text-brand-ink text-center font-light leading-[1.1] sm:leading-[1.2] tracking-[0] text-[28px] sm:text-[44pt]">
             <div className="whitespace-normal sm:whitespace-nowrap">STEP INTO AN EXCLUSIVE REALM</div>
-            <div className="whitespace-normal sm:whitespace-nowrap mb-4">WHERE DISTINCTION KNOWS NO BOUNDS.</div>
+            <div className="whitespace-normal sm:whitespace-nowrap mb-2 sm:mb-4">WHERE DISTINCTION KNOWS NO BOUNDS.</div>
           </h2>
           
           {/* Subheadline directly under second line */}
@@ -51,7 +51,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
             className="text-center"
           >
-            <p className="font-neue-haas text-brand-ink-90 font-extralight leading-[36pt] tracking-[0] text-[30pt] text-center whitespace-normal sm:whitespace-nowrap">
+            <p className="font-neue-haas text-brand-ink-90 font-extralight leading-[1.3] sm:leading-[36pt] tracking-[0] text-[18px] sm:text-[30pt] text-center whitespace-normal sm:whitespace-nowrap">
               {t('hero_subtitle_ai')} {t('hero_subtitle_text')} {t('hero_subtitle_brand')}.
             </p>
           </motion.div>
@@ -73,7 +73,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
             className=""
           >
-            <div className="font-neue-haas text-brand-ink font-light leading-[43.2pt] tracking-[0] text-[36pt] uppercase text-center">
+            <div className="font-neue-haas text-brand-ink font-light leading-[1.2] sm:leading-[43.2pt] tracking-[0] text-[24px] sm:text-[36pt] uppercase text-center">
               {t('hero_cta')}
             </div>
           </motion.div>
@@ -85,7 +85,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
             className="max-w-lg sm:max-w-xl mx-auto"
           >
-            <p className="font-neue-haas text-brand-ink font-normal leading-[36pt] tracking-[0] text-[18pt] text-center whitespace-normal sm:whitespace-nowrap">
+            <p className="font-neue-haas text-brand-ink font-normal leading-[1.4] sm:leading-[36pt] tracking-[0] text-[14px] sm:text-[18pt] text-center whitespace-normal sm:whitespace-nowrap">
               [ {t('hero_cities')} ]
             </p>
           </motion.div>
