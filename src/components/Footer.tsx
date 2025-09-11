@@ -40,13 +40,24 @@ const Footer = ({ isVisible }: FooterProps) => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="bg-brand-black border-t border-brand-ink-10"
+      className="relative footer-gradient-foundation border-t border-brand-ink-10 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      {/* Layer 1: Foundation Gradient */}
+      <div className="absolute inset-0 footer-foundation-gradient" />
+      
+      {/* Layer 2: Horizontal Sweep */}
+      <div className="absolute inset-0 footer-horizontal-sweep" />
+      
+      {/* Layer 3: Edge Vignetting */}
+      <div className="absolute inset-0 footer-edge-vignette" />
+      
+      {/* Layer 4: Noise Texture Overlay */}
+      <div className="absolute inset-0 footer-noise-overlay" />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
           
           {/* Left Section - Links & Languages */}
-          <div className="space-y-8">
+          <div className="space-y-8 footer-section-hover">
             {/* Legal Links */}
             <div>
               <nav className="flex flex-wrap gap-6 mb-8">
@@ -87,7 +98,7 @@ const Footer = ({ isVisible }: FooterProps) => {
           </div>
           
           {/* Center Section - App Downloads */}
-          <div className="text-center space-y-6">
+          <div className="text-center space-y-6 footer-section-hover">
             <h3 className="typography-caption text-brand-ink">
               {t('footer_app_intro')}
             </h3>
@@ -113,7 +124,7 @@ const Footer = ({ isVisible }: FooterProps) => {
           </div>
           
           {/* Right Section - Social & Copyright */}
-          <div className="space-y-6 sm:space-y-8 text-center md:text-left lg:text-right">
+          <div className="space-y-6 sm:space-y-8 text-center md:text-left lg:text-right footer-section-hover">
             {/* Social Media */}
             <div>
               <h3 className="typography-caption text-brand-ink mb-6">

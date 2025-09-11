@@ -186,3 +186,145 @@
     transform: translateY(0);
   }
 }
+
+/* Footer Gradient System */
+.footer-gradient-foundation {
+  background: hsl(var(--brand-black));
+}
+
+/* Layer 1: Foundation Gradient - Transparent to Brand Black */
+.footer-foundation-gradient {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    hsla(var(--brand-black) / 0.1) 25%,
+    hsla(var(--brand-black) / 0.6) 70%,
+    hsl(var(--brand-black)) 100%
+  );
+  animation: footer-foundation-fade-in 300ms ease-out;
+}
+
+/* Layer 2: Horizontal Sweep - Three spotlight zones */
+.footer-horizontal-sweep {
+  background: radial-gradient(
+    ellipse 300px 200px at 16.66% 50%,
+    hsla(var(--brand-ink) / 0.03) 0%,
+    transparent 70%
+  ),
+  radial-gradient(
+    ellipse 300px 200px at 50% 50%,
+    hsla(var(--brand-ink) / 0.03) 0%,
+    transparent 70%
+  ),
+  radial-gradient(
+    ellipse 300px 200px at 83.33% 50%,
+    hsla(var(--brand-ink) / 0.03) 0%,
+    transparent 70%
+  );
+  animation: footer-sweep-fade-in 400ms ease-out 200ms both;
+}
+
+/* Layer 3: Edge Vignetting */
+.footer-edge-vignette {
+  background: radial-gradient(
+    ellipse at center,
+    transparent 40%,
+    hsla(var(--brand-black) / 0.1) 70%,
+    hsla(var(--brand-black) / 0.3) 90%,
+    hsla(var(--brand-black) / 0.6) 100%
+  );
+  animation: footer-vignette-fade-in 500ms ease-out 400ms both;
+}
+
+/* Layer 4: Noise Texture Overlay */
+.footer-noise-overlay {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.02;
+  mix-blend-mode: multiply;
+}
+
+/* Interactive Hover Effects */
+.footer-section-hover {
+  position: relative;
+  transition: all 400ms ease-out;
+}
+
+.footer-section-hover::before {
+  content: '';
+  position: absolute;
+  inset: -1rem;
+  background: radial-gradient(
+    ellipse at center,
+    hsla(var(--brand-ink) / 0.05) 0%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 400ms ease-out;
+  pointer-events: none;
+  border-radius: 1rem;
+}
+
+.footer-section-hover:hover::before {
+  opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-foundation-gradient {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      hsla(var(--brand-black) / 0.2) 20%,
+      hsla(var(--brand-black) / 0.7) 65%,
+      hsl(var(--brand-black)) 100%
+    );
+  }
+  
+  .footer-horizontal-sweep {
+    background: radial-gradient(
+      ellipse 250px 150px at 50% 50%,
+      hsla(var(--brand-ink) / 0.02) 0%,
+      transparent 70%
+    );
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-horizontal-sweep {
+    background: radial-gradient(
+      ellipse 300px 200px at 25% 50%,
+      hsla(var(--brand-ink) / 0.03) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 300px 200px at 75% 50%,
+      hsla(var(--brand-ink) / 0.03) 0%,
+      transparent 70%
+    );
+  }
+}
+
+/* Animation Keyframes */
+@keyframes footer-foundation-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes footer-sweep-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes footer-vignette-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* GPU Acceleration */
+.footer-foundation-gradient,
+.footer-horizontal-sweep,
+.footer-edge-vignette,
+.footer-noise-overlay {
+  will-change: opacity;
+  transform: translateZ(0);
+}
