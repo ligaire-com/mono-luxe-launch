@@ -19,7 +19,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/60 z-10" />
       
       {/* Hero Content - Positioned according to vertical ratios */}
-      <div className="relative z-20 flex flex-col min-h-screen justify-between text-center px-6 pb-[10vh]">
+      <div className="relative z-20 flex flex-col min-h-screen justify-between text-center px-6 pb-[20vh]">
         {/* Brand Logo - ~10% from top */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
