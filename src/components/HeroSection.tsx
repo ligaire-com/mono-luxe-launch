@@ -41,8 +41,8 @@ const HeroSection = () => {
           className="max-w-5xl mx-auto mb-8 sm:mb-12"
         >
           <h2 className="font-neue-haas text-brand-ink text-center" style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: '200', lineHeight: '1.2', letterSpacing: '0.02em' }}>
-            STEP INTO AN EXCLUSIVE REALM<br />
-            WHERE DISTINCTION KNOWS NO BOUNDS.
+            <div className="whitespace-nowrap">STEP INTO AN EXCLUSIVE REALM</div>
+            <div className="whitespace-nowrap">WHERE DISTINCTION KNOWS NO BOUNDS.</div>
           </h2>
         </motion.div>
         
