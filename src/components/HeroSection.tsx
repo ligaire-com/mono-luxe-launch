@@ -42,10 +42,10 @@ const HeroSection = () => {
         >
           <h2 className="font-neue-haas font-normal leading-[1.1] text-brand-ink text-center">
             <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-1">
-              {t('hero_title_1')} {t('hero_title_2')}
+              {t('hero_title_1')}
             </span>
             <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-              {t('hero_title_3')} {t('hero_title_4')}
+              {t('hero_title_2')}
             </span>
           </h2>
         </motion.div>
@@ -65,7 +65,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="max-w-lg sm:max-w-xl mx-auto mb-16 sm:mb-20"
         >
-          <p className="text-base sm:text-lg text-brand-ink-90 leading-relaxed text-center">
+          <p className="text-base sm:text-lg text-brand-ink-90 leading-tight text-center">
             {t('hero_subtitle_ai')} {t('hero_subtitle_text')} {t('hero_subtitle_brand')}.
           </p>
         </motion.div>

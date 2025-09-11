@@ -6,10 +6,8 @@ const resources = {
     translation: {
       // Hero Section
       brand_name: 'LIGAIRE',
-      hero_title_1: 'STEP INTO AN',
-      hero_title_2: 'EXCLUSIVE REALM',
-      hero_title_3: 'WHERE DISTINCTION',
-      hero_title_4: 'KNOWS NO BOUNDS.',
+      hero_title_1: 'STEP INTO AN EXCLUSIVE REALM',
+      hero_title_2: 'WHERE DISTINCTION KNOWS NO BOUNDS.',
       hero_subtitle_ai: 'AI-powered',
       hero_subtitle_text: 'lifestyle and luxury services, powered by',
       hero_subtitle_brand: 'Connected VIP',
@@ -38,10 +36,8 @@ const resources = {
   'en-GB': {
     translation: {
       brand_name: 'LIGAIRE',
-      hero_title_1: 'STEP INTO AN',
-      hero_title_2: 'EXCLUSIVE REALM',
-      hero_title_3: 'WHERE DISTINCTION',
-      hero_title_4: 'KNOWS NO BOUNDS.',
+      hero_title_1: 'STEP INTO AN EXCLUSIVE REALM',
+      hero_title_2: 'WHERE DISTINCTION KNOWS NO BOUNDS.',
       hero_subtitle_ai: 'Exclusive',
       hero_subtitle_text: 'lifestyle and luxury services powered by',
       hero_subtitle_brand: 'Connected VIP',
@@ -68,10 +64,8 @@ const resources = {
   'it': {
     translation: {
       brand_name: 'LIGAIRE',
-      hero_title_1: 'ENTRA IN UN',
-      hero_title_2: 'REGNO ESCLUSIVO',
-      hero_title_3: 'DOVE LA DISTINZIONE',
-      hero_title_4: 'NON CONOSCE LIMITI.',
+      hero_title_1: 'ENTRA IN UN REGNO ESCLUSIVO',
+      hero_title_2: 'DOVE LA DISTINZIONE NON CONOSCE LIMITI.',
       hero_subtitle_ai: 'Esclusivi',
       hero_subtitle_text: 'servizi di lifestyle e lusso alimentati da',
       hero_subtitle_brand: 'Connected VIP',
@@ -98,10 +92,8 @@ const resources = {
   'de': {
     translation: {
       brand_name: 'LIGAIRE',
-      hero_title_1: 'BETRETEN SIE EIN',
-      hero_title_2: 'EXKLUSIVES REICH',
-      hero_title_3: 'WO UNTERSCHEIDUNG',
-      hero_title_4: 'KEINE GRENZEN KENNT.',
+      hero_title_1: 'BETRETEN SIE EIN EXKLUSIVES REICH',
+      hero_title_2: 'WO UNTERSCHEIDUNG KEINE GRENZEN KENNT.',
       hero_subtitle_ai: 'Exklusive',
       hero_subtitle_text: 'Lifestyle- und Luxusdienstleistungen von',
       hero_subtitle_brand: 'Connected VIP',
@@ -128,10 +120,8 @@ const resources = {
   'fr-FR': {
     translation: {
       brand_name: 'LIGAIRE',
-      hero_title_1: 'ENTREZ DANS UN',
-      hero_title_2: 'ROYAUME EXCLUSIF',
-      hero_title_3: 'OÙ LA DISTINCTION',
-      hero_title_4: 'NE CONNAÎT PAS DE LIMITES.',
+      hero_title_1: 'ENTREZ DANS UN ROYAUME EXCLUSIF',
+      hero_title_2: 'OÙ LA DISTINCTION NE CONNAÎT PAS DE LIMITES.',
       hero_subtitle_ai: 'Exclusifs',
       hero_subtitle_text: 'services de style de vie et de luxe par',
       hero_subtitle_brand: 'Connected VIP',
@@ -158,10 +148,8 @@ const resources = {
   'es-ES': {
     translation: {
       brand_name: 'LIGAIRE',
-      hero_title_1: 'ENTRA EN UN',
-      hero_title_2: 'REINO EXCLUSIVO',
-      hero_title_3: 'DONDE LA DISTINCIÓN',
-      hero_title_4: 'NO CONOCE LÍMITES.',
+      hero_title_1: 'ENTRA EN UN REINO EXCLUSIVO',
+      hero_title_2: 'DONDE LA DISTINCIÓN NO CONOCE LÍMITES.',
       hero_subtitle_ai: 'Exclusivos',
       hero_subtitle_text: 'servicios de estilo de vida y lujo por',
       hero_subtitle_brand: 'Connected VIP',
