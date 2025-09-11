@@ -65,13 +65,13 @@ const HeroSection = () => {
           className="h-px bg-brand-ink-30 mx-auto mb-6"
         />
         
-        {/* Launching Soon + Cities - ~70% from top */}
-        <div className="mb-auto">
+        {/* Launching Soon + Cities - Better positioned ~60-65% from top */}
+        <div className="mt-auto mb-[15vh] sm:mb-[20vh]">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-            className="mb-2"
+            className="mb-4"
           >
             <div className="font-neue-haas text-brand-ink font-light leading-[43.2pt] tracking-[0] text-[36pt] uppercase text-center">
               {t('hero_cta')}
