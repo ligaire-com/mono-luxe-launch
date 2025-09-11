@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* LIGAIRE Logo Typography - Exact Specifications */
+/* LIGAIRE Logo Typography - High-Resolution Design Optimized */
 .ligaire-logo {
   font-family: 'Neue Haas Grotesk Display Pro', 'Helvetica Neue', Arial, sans-serif !important;
   font-weight: 400 !important;
@@ -10,37 +10,43 @@
   text-transform: uppercase !important;
   
   /* Mobile First - 320px-374px */
-  font-size: 16px !important;
+  font-size: 18px !important;
   letter-spacing: 0.28em !important;
   
   /* 375px-575px */
   @media (min-width: 375px) {
-    font-size: 17px !important;
+    font-size: 20px !important;
     letter-spacing: 0.3em !important;
   }
   
   /* 576px-767px */
   @media (min-width: 576px) {
-    font-size: 18px !important;
+    font-size: 24px !important;
     letter-spacing: 0.35em !important;
   }
   
   /* Desktop - 1024px-1439px */
   @media (min-width: 1024px) {
-    font-size: 24px !important;
+    font-size: 32px !important;
     letter-spacing: 0.4em !important;
   }
   
   /* 1440px-1919px */
   @media (min-width: 1440px) {
-    font-size: 28px !important;
+    font-size: 40px !important;
     letter-spacing: 0.4em !important;
   }
   
-  /* 1920px+ */
+  /* 1920px-2559px */
   @media (min-width: 1920px) {
-    font-size: 32px !important;
+    font-size: 48px !important;
     letter-spacing: 0.4em !important;
+  }
+  
+  /* 2560px+ High Resolution */
+  @media (min-width: 2560px) {
+    font-size: 56px !important;
+    letter-spacing: 0.45em !important;
   }
 }
 
