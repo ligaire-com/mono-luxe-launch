@@ -19,26 +19,27 @@ const HeroSection = () => {
       {/* Dark overlay for better text contrast */}
       <div className="absolute inset-0 bg-black/60 z-10" />
       
-      {/* Hero Content - Mobile optimized to match reference */}
-      <div className="relative z-20 flex flex-col items-center justify-center min-h-screen text-center px-6 py-20">
-        {/* Brand Logo */}
+      {/* Hero Content - Positioned according to vertical ratios */}
+      <div className="relative z-20 flex flex-col min-h-screen text-center px-6">
+        {/* Brand Logo - ~10% from top */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-16 sm:mb-20"
+          className="pt-[10vh] mb-auto"
         >
           <h1 className="text-lg sm:text-xl md:text-2xl text-brand-ink tracking-[0.4em] font-normal uppercase">
             {t('brand_name')}
           </h1>
         </motion.div>
         
-        {/* Main Headline - Split for better luxury impact */}
+        {/* Main Quote - ~40-50% from top (centered) */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="max-w-5xl mx-auto mb-8 sm:mb-12"
+          className="max-w-5xl mx-auto mb-auto"
+          style={{ marginTop: '30vh', marginBottom: '20vh' }}
         >
           <h2 className="font-neue-haas text-brand-ink text-center" style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: '200', lineHeight: '1.2', letterSpacing: '0.02em' }}>
             <div className="whitespace-nowrap">STEP INTO AN EXCLUSIVE REALM</div>
@@ -63,32 +64,34 @@ const HeroSection = () => {
           initial={{ opacity: 0, width: 0 }}
           animate={{ opacity: 1, width: "4rem" }}
           transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
-          className="h-px bg-brand-ink-30 mx-auto mb-6 sm:mb-8"
+          className="h-px bg-brand-ink-30 mx-auto mb-6"
         />
         
-        {/* CTA Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-          className="mb-2"
-        >
-          <div className="text-base sm:text-lg text-brand-ink font-normal tracking-wide uppercase">
-            {t('hero_cta')}
-          </div>
-        </motion.div>
-        
-        {/* Cities List */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
-          className="max-w-lg sm:max-w-xl mx-auto"
-        >
-          <p className="text-base sm:text-lg text-brand-ink leading-relaxed font-normal">
-            [ {t('hero_cities')} ]
-          </p>
-        </motion.div>
+        {/* Launching Soon + Cities - ~70% from top */}
+        <div className="mb-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+            className="mb-2"
+          >
+            <div className="text-base sm:text-lg text-brand-ink font-normal tracking-wide uppercase">
+              {t('hero_cta')}
+            </div>
+          </motion.div>
+          
+          {/* Cities List */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
+            className="max-w-lg sm:max-w-xl mx-auto"
+          >
+            <p className="text-base sm:text-lg text-brand-ink leading-relaxed font-normal">
+              [ {t('hero_cities')} ]
+            </p>
+          </motion.div>
+        </div>
       </div>
       
       {/* Scroll Indicator */}
