@@ -20,13 +20,13 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/60 z-10" />
       
       {/* Hero Content - Positioned according to vertical ratios */}
-      <div className="relative z-20 flex flex-col justify-between h-full text-center px-6">
+      <div className="relative z-20 flex flex-col min-h-screen text-center px-6">
         {/* Brand Logo - ~10% from top */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="pt-0"
+          className="pt-[10vh] mb-auto"
         >
           <h1 className="text-lg sm:text-xl md:text-2xl text-brand-ink tracking-[0.4em] font-normal uppercase">
             {t('brand_name')}
@@ -38,7 +38,8 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="max-w-5xl mx-auto"
+          className="max-w-5xl mx-auto mb-auto"
+          style={{ marginTop: '30vh', marginBottom: '20vh' }}
         >
           <h2 className="font-neue-haas text-brand-ink text-center" style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: '200', lineHeight: '1.2', letterSpacing: '0.02em' }}>
             <div className="whitespace-nowrap">STEP INTO AN EXCLUSIVE REALM</div>
