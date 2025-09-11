@@ -71,7 +71,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-          className="mb-6 sm:mb-8"
+          className="mb-2"
         >
           <div className="text-base sm:text-lg text-brand-ink font-normal tracking-wide uppercase">
             {t('hero_cta')}
