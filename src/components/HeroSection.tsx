@@ -75,7 +75,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
             className="mb-2"
           >
-            <div className="text-base sm:text-lg text-brand-ink font-normal tracking-wide uppercase">
+            <div className="font-neue-haas text-brand-ink font-light leading-[43.2pt] tracking-[0] text-[36pt] uppercase text-center">
               {t('hero_cta')}
             </div>
           </motion.div>
@@ -87,7 +87,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 1.0, ease: "easeOut" }}
             className="max-w-lg sm:max-w-xl mx-auto"
           >
-            <p className="text-base sm:text-lg text-brand-ink leading-relaxed font-normal">
+            <p className="font-neue-haas text-brand-ink font-normal leading-[36pt] tracking-[0] text-[30pt] text-center">
               [ {t('hero_cities')} ]
             </p>
           </motion.div>
