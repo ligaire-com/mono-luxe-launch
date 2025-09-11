@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section 
       className="relative w-full overflow-hidden bg-brand-black"
       style={{
-        height: 'calc(100vh + 200px)', // Slightly taller than viewport to enable scroll
+        height: '100vh', // Exactly one screen height
         backgroundImage: `url(${luxuryLifestyleBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
