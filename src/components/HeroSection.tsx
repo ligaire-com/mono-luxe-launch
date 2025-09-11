@@ -7,9 +7,8 @@ const HeroSection = () => {
   
   return (
     <section 
-      className="relative w-full overflow-hidden bg-brand-black"
+      className="relative w-full overflow-hidden bg-brand-black h-[100dvh] sm:h-screen"
       style={{
-        height: '100vh', // Exactly one screen height
         backgroundImage: `url(${luxuryLifestyleBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -26,9 +25,9 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="pt-[10vh] mb-auto"
+          className="pt-[8vh] sm:pt-[10vh] mb-auto"
         >
-          <h1 className="text-lg sm:text-xl md:text-2xl text-brand-ink tracking-[0.4em] font-normal uppercase">
+          <h1 className="text-lg sm:text-xl md:text-2xl text-brand-ink tracking-[0.2em] sm:tracking-[0.4em] font-normal uppercase">
             {t('brand_name')}
           </h1>
         </motion.div>
@@ -38,12 +37,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="max-w-5xl mx-auto mb-auto"
-          style={{ marginTop: '30vh', marginBottom: '20vh' }}
+          className="max-w-5xl mx-auto mb-auto mt-[18vh] mb-[12vh] sm:mt-[30vh] sm:mb-[20vh]"
         >
-          <h2 className="font-neue-haas text-brand-ink text-center" style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: '200', lineHeight: '1.2', letterSpacing: '0.02em' }}>
-            <div className="whitespace-nowrap">STEP INTO AN EXCLUSIVE REALM</div>
-            <div className="whitespace-nowrap mb-4">WHERE DISTINCTION KNOWS NO BOUNDS.</div>
+          <h2 className="font-neue-haas text-brand-ink text-center font-[200] leading-[1.2] tracking-[0.01em] sm:tracking-[0.02em] text-[clamp(22px,6vw,32px)] sm:text-[clamp(28px,4vw,48px)]">
+            <div className="whitespace-normal sm:whitespace-nowrap">STEP INTO AN EXCLUSIVE REALM</div>
+            <div className="whitespace-normal sm:whitespace-nowrap mb-4">WHERE DISTINCTION KNOWS NO BOUNDS.</div>
           </h2>
           
           {/* Subheadline directly under second line */}
@@ -53,7 +51,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
             className="text-center"
           >
-            <p className="text-base sm:text-lg text-brand-ink-90 leading-tight whitespace-nowrap">
+            <p className="text-sm sm:text-lg text-brand-ink-90 leading-tight whitespace-normal sm:whitespace-nowrap">
               {t('hero_subtitle_ai')} {t('hero_subtitle_text')} {t('hero_subtitle_brand')}.
             </p>
           </motion.div>
