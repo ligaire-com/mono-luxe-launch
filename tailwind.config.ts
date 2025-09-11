@@ -80,7 +80,7 @@ export default {
 		fontFamily: {
 			'display': ['var(--font-display)', 'sans-serif'],
 			'body': ['var(--font-body)', 'sans-serif'],
-			'neue-haas': ['Neue Haas Grotesk Display', 'Inter', 'sans-serif'],
+			'neue-haas': ['Neue Haas Grotesk Display Pro', 'Inter', 'sans-serif'],
 			'inter': ['Inter', 'sans-serif']
 		},
 		spacing: {
