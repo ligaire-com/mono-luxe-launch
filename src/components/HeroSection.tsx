@@ -65,12 +65,13 @@ const HeroSection = () => {
           className="h-px bg-brand-ink-30 mx-auto mb-6"
         />
         
-        {/* Launching Soon + Cities - anchored 10% above footer */}
-        <div className="absolute bottom-[10vh] left-1/2 -translate-x-1/2 w-full px-6 space-y-1">
+        {/* Launching Soon + Cities - ~70% from top */}
+        <div className="mb-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+            className="mb-2"
           >
             <div className="font-neue-haas text-brand-ink font-light leading-[43.2pt] tracking-[0] text-[36pt] uppercase text-center">
               {t('hero_cta')}
